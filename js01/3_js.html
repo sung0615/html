@@ -31,19 +31,21 @@
         // 50 점이상 e
         // 50 점미만 f
 
-        var engScore = 80;
-        if (engScore >= 90) {
-            alert("a");
+        var engScore = 110;
+        if (engScore < 0 || engScore > 100){
+            alert("잘못된 점수 입니다!!");
+        } else if (engScore >= 90 || engScore <= 100) {
+            alert("A등급");
         } else if (engScore >= 80) {
-            alert("b");
+            alert("B등급");
         } else if (engScore >= 70) {
-            alert("c");
+            alert("C등급");
         } else if (engScore >= 60) {
-            alert("d");
+            alert("D등급");
         } else if (engScore >= 50) {
-            alert("e");
+            alert("E등급");
         } else {
-            alert("f");
+            alert("F등급");
         }
         
 
