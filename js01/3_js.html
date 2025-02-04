@@ -31,24 +31,77 @@
         // 50 점이상 e
         // 50 점미만 f
 
-        var engScore = 80;
-        if (engScore < 0 || engScore > 100){
-            alert("잘못된 점수 입니다!!");
-        } else if (engScore >= 90 && engScore <= 100) {
-            alert("A등급");
-        } else if (engScore >= 80) {
-            alert("B등급");
-        } else if (engScore >= 70) {
-            alert("C등급");
-        } else if (engScore >= 60) {
-            alert("D등급");
-        } else if (engScore >= 50) {
-            alert("E등급");
+         
+        // if (engScore < 0 || engScore > 100){
+        //     alert("잘못된 점수 입니다!!");
+        // } else if (engScore >= 90 && engScore <= 100) {
+        //     alert("A등급");
+        // } else if (engScore >= 80) {
+        //     alert("B등급");
+        // } else if (engScore >= 70) {
+        //     alert("C등급");
+        // } else if (engScore >= 60) {
+        //     alert("D등급");
+        // } else if (engScore >= 50) {
+        //     alert("E등급");
+        // } else {
+        //     alert("F등급");
+        // }
+
+        // var engScore = 91;
+
+        // if (engScore >= 90) {
+        //     if (engScore >= 97){
+        //         alert("A+");
+        //     } else if (engScore >= 94) {
+        //         alert("A0");
+        //     } else {
+        //         alert("A-");
+        //     }
+        // }else if (engScore >= 80) {
+        //     if (engScore >= 77){
+        //         alert("B+");
+        //     } else if (engScore >= 74) {
+        //         alert("B0");
+        //     } else {
+        //         alert("B-");
+        //     }
+        // } else if (engScore >= 70) {
+        //     alert("C등급");
+        // } else if (engScore >= 60) {
+        //     alert("D등급");
+        // } else if (engScore >= 50) {
+        //     alert("E등급");
+        // } else {
+        //     alert("F등급");
+        // }
+
+        var x = 1;
+        var y = 1;
+
+        if (x == 0 && y == 0) {
+            console.log("원점에 있습니다.");
+        } else if (x == 0 || y == 0) {
+            if (x == 0) {
+                console.log("y선에 있습니다.");
+            } else {
+                console.log("x선에 있습니다.");
+            }
         } else {
-            alert("F등급");
+            if (x > 0) {
+                if (y > 0) {
+                    console.log("1사분면에 있습니다.");
+                } else {
+                    console.log("4사분면에 있습니다.");
+                }
+            } else {
+                if (y > 0) {
+                    console.log("2사분면에 있습니다.");
+                } else {
+                    console.log("3사분면에 있습니다.");
+                }
+            }
         }
-
-
         
 
     </script>
