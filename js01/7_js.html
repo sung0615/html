@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function kkkk(x,y){
+            var res = "0";
+            if (x == 0 && y == 0) {
+                var res = "0";
+            } else if (x == 0 || y == 0) {
+                if (x == 0) {
+                    var res = "y";
+                } else {
+                    var res = "x";
+                }
+            } else {
+                if (x > 0) {
+                    if (y > 0) {
+                        var res = "1";
+                    } else {
+                        var res = "4";
+                    }
+                } else {
+                    if (y > 0) {
+                        var res = "2";
+                    } else {
+                       var res = "3";
+                    }
+                }
+                return res;
+            }  
+            
+        }
+        var c = kkkk(-5,2);
+        alert(c + "분단에 있습니다다");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    </script>
+</body>
+</html>
